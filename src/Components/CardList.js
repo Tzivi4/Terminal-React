@@ -1,17 +1,19 @@
 import React from 'react'
 import Card from '../Components/Card'
+import '../Components/Styles/CardList.css'
 
 const CardList = ({ data }) => (
-    <React.Fragment>
-        {data.map((article, i) => {
-            console.log(data)
-            return (
-                <Card
-                    key={i}
-                    {...article}
-                />
-            )
-        })}
+    <React.Fragment >
+        <div className="col-12 row mt-4 Card-List">
+            {data.map((article, i) => {
+                return (
+                    <Card
+                        key={i}
+                        {...article}
+                    />
+                )
+            })}
+        </div>
     </React.Fragment>
 )
 

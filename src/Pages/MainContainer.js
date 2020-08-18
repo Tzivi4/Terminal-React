@@ -1,11 +1,11 @@
 import React from 'react'
+import Main from './Main'
 import useFetch from '../Hooks/useFetch'
-import Main from '../Pages/Main'
 import Loading from '../Components/Loading'
-import url from '../url'
-import FatalError from '../Pages/500'
+import FatalError from '../Pages/FatalEror'
+import url from '../Components/config'
 
-const MainContainer = () => {
+const CategoriesContainer = () => {
 
     const { data, loading, err } = useFetch(`${url}/inicio`)
 
@@ -14,9 +14,10 @@ const MainContainer = () => {
     if (err)
         return <FatalError />
 
-    return <Main id="root"
+    return <Main
         data={data}
     />
+
 }
 
-export default MainContainer
+export default CategoriesContainer

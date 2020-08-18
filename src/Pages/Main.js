@@ -1,16 +1,23 @@
 import React from 'react'
+import NavBar from '../Components/NavBar/NavBar'
+import Tab from '../Components/Tab'
 import CardList from '../Components/CardList'
-import Header from '../Components/Header'
+import CategoriesContainer from '../Components/Categories/CategoriesContainer'
 
 const Main = ({ data }) => (
 
     <React.Fragment>
 
-        <Header />
+        <NavBar/>
+
+        <CategoriesContainer />
 
         <CardList
             data={data}
         />
+
+        <Tab />
+
     </React.Fragment>
 
 

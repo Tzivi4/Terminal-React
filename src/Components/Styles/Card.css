@@ -1,12 +1,18 @@
-.Card-Body {
-  width: 580px;
-  margin: 25px;
+.Card {
+  max-width: 300px;
+  border-radius: 12px;
 }
 
-.Card-Info h1 {
-  font-size: 32px;
+img {
+  border-radius: 6px;
 }
 
-.Card-Info p {
-    font-size: 18px;
-  }
+.card-img-top {
+  width: 100%;
+  min-height: 15vw;
+  object-fit: cover;
+}
+
+.card-text {
+  font-size: 20px;
+}

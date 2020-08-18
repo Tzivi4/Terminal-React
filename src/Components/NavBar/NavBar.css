@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #fe4a49;
+  height: 77px;
+}
+
+.navbar-brand-centered {
+    display: block;
+    width: 160px;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+  font-size: 22px;
+  font-weight: 600;
+  color: black;
+}
